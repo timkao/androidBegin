@@ -17,6 +17,8 @@ public class AddWordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_word);
 
+        System.out.println(getLifecycle().toString());
+
         Intent intent = getIntent();
         String newWord = intent.getStringExtra("initialText");
         EditText box = findViewById(R.id.newWord);

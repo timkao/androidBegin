@@ -16,6 +16,9 @@ public class StartMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_menu);
+
+        System.out.println(getLifecycle().toString());
+
     }
 
     public void handleGoPlayGame(View view) {
